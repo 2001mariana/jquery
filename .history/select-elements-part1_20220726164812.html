@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Parte 1- select elements</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p>O JQUERY é uma camada que nos permite manipular os elementos html de maneira mais fácil e prática. Por trás dele é javascript.</p>
+    
+    <h1 class="diversos2">Selecionando elementos parte 1</h1>
+
+		<div>Div 1</div>
+		<div class="diversos1">Div 2</div>
+
+		<ul id="menu1">
+			<li>Menu 1 - Item 1</li>
+			<li class="diversos1">Menu 1 - Item 2</li>
+			<li>Menu 1 - Item 3</li>
+		</ul>
+
+		<ul>
+			<li class="itemMenu2">Menu 2 - Item 1</li>
+			<li class="itemMenu2">Menu 2 - Item 2</li>
+			<li class="itemMenu2">Menu 2 - Item 3</li>
+		</ul>
+
+		<input type="text" placeholder="campo 1" />
+
+		<select class="diversos1">
+			<option>-- selecione uma opção --</option>
+			<option>opção 1</option>
+			<option>opção 2</option>
+		</select>
+
+		<br />
+
+		<img src="carro.jpg" class="diversos2" id="imagem" />    
+</body>
+<script>
+console.log($('p'))
+
+    $("p").css("color", "#708090")
+    $('h1').css("background-color", "#87CEFA")
+    $('h1').css("color", "	#708090")
+    $('.itemMenu2').css("color", "#20B2AA")
+    $()
+</script>
+</html>
