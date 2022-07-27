@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Parte 1- select elements</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='main.js'></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #E6E6FA;">
+    <div id="page-size" style="background-color: #F8F8FF;">
+      <h1>HTML MANIPULATION</h1>
+      <p>tenho aqui duas imagens exatamente iguais em quesito html, porém, na segunda adicionei um id para que seja trocada por outra.</p>
+      <img src="img/esfera_1.png" border="3" />
+      <img src="img/esfera_1.png" border="3" id="trocar-img" />
+
+      <div style="background-color: red; width: 100px; height: 100px"></div>
+      </div>
+</body>
+<script>
+$("h1").css("color", "#6A5ACD")
+$("h1").css("margin-bottom", "26px")
+$("body").css("text-align", "center")
+$("div#page-size").css("width", "700px")
+$("div#page-size").css("margin", "auto")    
+
+//recuperando aributo no console.log:
+console.log($('img').attr('src'))
+
+//substituindo a imagem 1 pela imagem 2:
+$('img#trocar-img').attr('src', 'img/esfera_2.png')
+
+$('div').attr('style', 'background-color: blue; width: 200px; height: 200px')
+
+//$('img').attr('style', 'background-color: blue; width: 200px; height: 200px')
+</script>
+</html>
