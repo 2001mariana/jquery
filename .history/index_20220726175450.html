@@ -9,29 +9,26 @@
     <script src='main.js'></script>
     <script src="jquery-3.6.0.min.js"></script>
 </head>
-<body style="background-color: 	#E6E6FA;">
+<body style="background-color: #F0FFFF;">
     <h1>Jquery</h1>
     <p>O JQUERY é uma camada que nos permite manipular os elementos html de maneira mais fácil e prática. Por trás dele é javascript.</p>
     
     <div>
         <img src="img/selec-elements-img.PNG" class="diversos2" id="imagem" />    
     </div>
-       <div ><a href="select-elements-part1.html">Seletores de elementos parte 1</a></div>
-       <div><a href="select-elements-part2.html">Seletores de elementos parte 2</a></div>
-
-    <br />
-
-    <div>
-        <img src="img/sequency-exec.PNG" id="imagem" />    
+    <div class="organize-select-elements">
+       <a href="select-elements-part1.html">Seletores de elementos parte 1</a>
+       <a href="select-elements-part2.html">Seletores de elementos parte 2</a> 
     </div>
-    <div><a href="execution-sequence.html">Sequência de execução</a></div>
+    
+    <a href="execution-sequence.html">Seletores de elementos parte 2</a> 
 </body>
 <script>
     $("h1").css("color", "#6A5ACD")
-    $("h1").css("margin-bottom", "26px")
     $("h1").css("text-align", "center")
-    $("body").css("text-align", "center")
    $("p").css("color", "#836FFF")
-   $("img").css("width", "800px")
+   $("div.organize-select-elements").css("width", "800px")
+   $("div.organize-select-elements").css("display", "flex")
+   $("div.organize-select-elements").css("justify-content", "space-between")
 </script>
 </html>

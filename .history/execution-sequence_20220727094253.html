@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Parte 1- select elements</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='main.js'></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #E6E6FA;">
+    <div id="page-size" style="background-color: #F8F8FF;">
+      <p>A ordem onde os scripts são colocados é muito importante pq o jquery faz uma leitura de cima para baixo.</p>
+      <p>Existe uma função do jquery que faz com que o script seja lido e executado somente depois de todo o dom ter sido montado.</p>
+      <img src="img/function-ready.PNG" id="imagem" />  
+      <p>Dessa forma, por mais que meus cripts estejam antes da minha div com "#exemplo" o jquery conseguirá localizar e executar o console.log já que essa função só é chamada após todo o DOM ter sido montado.</p>
+      <p>Outras duas formas de fazer o mesmo porém com um código menor são mostrados nas seguintes imagens:</p>
+      <img src="img/function-ready-hidden.PNG" id="imagem" />  
+      <p>Na imagem acima teremos o comportamento da função ready, onde fazemos referência para a função "teste" e a mesma será executada somente depois de tudo pronto.</p>
+      <img src="img/function-nameless.PNG" id="imagem" />  
+    </div>
+</body>
+<script>
+$("body").css("margin", "0")
+$("body").css("margin", "0")
+$("body").css("text-align", "center")
+$("div#page-size").css("width", "700px")
+$("div#page-size").css("margin", "auto")    
+</script>
+</html>
