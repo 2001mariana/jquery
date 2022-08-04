@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>
+
+			$(document).ready(() => {
+				
+				$('.item2').remove()
+
+			})
+
+		</script>
+	</head>
+
+	<body style="margin: 0 auto; background-color: 	#F0FFFF; text-align: justify;">
+
+		<div id="header" style="background-color: #6495ED; height: 60px; width: 100%; padding: 8px;">
+			<a href="index.html" style="text-decoration: none; text-transform: uppercase; color:#FFFFFF;"><h1>
+				Clique aqui para voltar à tela inicial</h1></a>
+		</div>
+		
+		
+		<ul id="lista1">
+			<li>Item 1</li>
+			<li class="item2">Item 2</li>
+			<li>Item 3</li>
+		</ul>
+
+		<div id="lista2">
+			<div>Item 1</div>
+			<div class="item2">Item 2</div>
+			<div>Item 3</div>
+		</div>
+
+		<hr id="linha" />
+
+	</body>
+
+    <script>
+		$("body").css("width", "800px")</script>
+
+</html>
