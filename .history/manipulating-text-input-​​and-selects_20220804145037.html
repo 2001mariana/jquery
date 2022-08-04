@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		
+	</head>
+
+	<body style="margin: 0 auto;">
+		
+		<h1>Formulário trabalhado ao longo da aula:</h1>
+
+		<div>
+		<p>Nome:</p>
+		<input type="text" id="nome" />
+		<br />
+
+		<p>Onde você nos encontrou?</p>
+		<select id="origem">
+			<option value="1">Google</option>
+			<option value="2">Facebook</option>
+			<option value="3">Rádio</option>
+			<option value="4">Outros meios</option>
+		</select>
+
+		<br />
+
+		<p>Sexo:</p>
+		<input type="radio" name="sexo" class="sexo" value="f">Feminino<br />
+		<input type="radio" name="sexo" class="sexo" value="m">Masculino<br />
+		<br />
+
+		<p>Interesses:</p>
+		<input type="checkbox" name="interesse" class="interesse" value="php">PHP<br />
+		<input type="checkbox" name="interesse" class="interesse" value="js">JavaScript<br />
+		<input type="checkbox" name="interesse" class="interesse" value="angular">Angular<br />
+		<input type="checkbox" name="interesse" class="interesse" value="nodejs">NodeJS<br />
+		</div>
+
+		<div style="border: 3px dotted black; margin: 10px 0;"></div>
+
+		<div>
+			<p>Como não foi ensinado ainda a capturar eventos para identificar o clique do usuário sobre o meio escolhido, 
+			neste momento apenas mostrarei imagem de como foi feito no console do browser</p>
+			<div>
+				<img src="img/manipulating-text-input-values -and-selects.PNG" id="imagem" />    
+			</div>
+			<p style="color: #f931d8">Como marcado em rosa, recurperamos o valor digitado no input de id nome através do método val.</p>
+			<p style="color: #20cf1d">Como marcado em verde, recurperamos o valor do campo selecionado atrvés do id origem, 
+			que é o mesmo do nosso select. Fizemos isso também utilizando o método val.</p>
+			<h1>Sobre a imagem abaixo...</h1>
+			<p>Com este mesmo método é possível também manipular os valores do iput ou select, como mostro na imagem abaixo:</p>
+			<div>
+				<img src="img/manipulating-input-values -and-selects-example.PNG" id="imagem" />    
+			</div>
+			<h1>Sobre a imagem abaixo...</h1>
+			<p style="color: #20cf1d">Quando damos um console.log num input checkbox como vemos marcado de verde na imagem abaixo, 
+		    o que acontece é que temos apenas o console.log dos inputs tipo checkbox que tenham a classe definida:</p>
+			<div>
+				<img src="img/manipulating-text-input-checked-value.PNG" id="imagem" />    
+			</div>
+			<p style="color: red">Já marcado de vermelho é quando colocamos como parametro do console.log além da classe, o ":checked". 
+			Que, como vemos no resultado, traz apenas aqueles que tiverem sido marcados e selecionados no formulário html.
+			Perceba inclusive, que a quantidade já passou a ser apenas 1.
+			</p>
+			<p style="color: #f931d8">Já marcado de rosa é a maneira que precisamos fazer para resgatar o valor do input checkbox selecionado.
+			</p>
+		</div>
+
+	</body>
+
+	<script>
+
+		$("h1").css("margin-bottom", "26px")
+		$("h1").css("text-align", "center")
+		$("body").css("width", "800px")
+		$("img").css("width", "800px")
+	
+	</script>
+
+</html>
